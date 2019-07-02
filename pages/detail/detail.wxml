@@ -1,0 +1,98 @@
+<!--pages/detail/detail.wxml-->
+<view class='detail'>
+  <view class='img_box'>
+      <view class='box_item' id="box_item"> 
+            <painter  palette="{{template}}" bind:imgOK="onImgOK" />
+      </view>
+  </view>
+  <view class='det_title'>
+     {{info.title}}
+  </view>
+  <view class='product'>
+      <view class='product_box'>
+        <view class='p_img'>
+        <image src='https://www.bslxx.com/public/static/yujian/images/21.png' style='width:100%;height:100%'></image>
+        </view>
+        <view class='p_desc'>
+          <view class='p_stan'>
+             产品规格：{{alcohol_pure_num}}度{{net_content_num}} x 6瓶/箱装
+          </view>
+          <view class='p_price'>
+            <view class='price'>￥{{price}}<text class='you'>包邮</text></view>
+            <view class='p_num'>
+              <view class='p_num_item minus' bindtap='minusNum' hover-class='num_btn'>-</view>
+              <view class='p_num_item number'>{{num}}</view>
+              <view class='p_num_item add' bindtap='addNum' hover-class='num_btn'>+</view>
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+  <view class='addAddr'>
+      <view class="add_title" bindtap='alertMask' wx:if="{{addr==''}}">+添加地址</view>
+      <view bindtap='alertMask' wx:if="{{addr.status==1}}">
+          <view class='addAddr_desc'>
+              <view class='addAddr_desc_name'>{{addr.firstname}}</view>
+              <view class='addAddr_desc_phone'>{{addr.phone}}</view>
+          </view>
+          <view class='addAddr_addr'>{{addr.address}}</view>
+      </view>
+  </view>
+  <view class='notice'>
+      <view>购买须知：</view>
+      <view>审核通过后7个工作日发货</view>
+      <view>定制商品不支持无理由退换货，如有疑问请联系客服</view>
+  </view>
+  <view class='imgDesc'>
+      <view class='img_desc_box'>
+        <image mode='aspectFill' src="https://www.bslxx.com/public/static/yujian/images/p1.jpg"></image>
+      </view>
+         <view class='img_desc_box'>
+        <image mode='aspectFill' src="https://www.bslxx.com/public/static/yujian/images/p2.jpg"></image>
+      </view>
+         <view class='img_desc_box'>
+        <image  mode='aspectFill' src="https://www.bslxx.com/public/static/yujian/images/p3.jpg"></image>
+      </view>
+         <view  class='img_desc_box p4_img'>
+        <image mode='aspectFill' src="https://www.bslxx.com/public/static/yujian/images/p4.jpg"></image>
+      </view>
+  </view>
+  <view class='pay'>
+      <view class='audit_btn'>审核通过后7个工作日发货<text class='price'>￥{{toltalPrice}}</text></view>
+      <!-- <view class='price_box'></view> -->
+      <!-- <view bindtap='cart' class='cart_btn'>加入购物车</view> -->
+      <view bindtap='pay' class='pay_btn'>支付</view>
+  </view>
+  <cover-view class='mask' wx:if='{{mask}}' bindtap='closed_mask'></cover-view>
+  <cover-view class='pickerAddr' wx:if='{{mask}}' >
+     <cover-view class='pick_title'>
+      <cover-view>收货地址</cover-view>
+      <cover-view class='pick_close_btn' bindtap='closed_mask'>X</cover-view>
+     </cover-view>
+     <cover-view class='info'>
+        <cover-view  style="width:100%;height:500rpx;overflow-y: scroll">
+          <block wx:for="{{descAddr}}">
+              <cover-view class='info_box'>
+                  <cover-view class='info_msg'  data-id='{{item.id}}'  data-index='{{index}}' bindtap="check">
+                    <cover-view class='info_msg_box'>
+                      <cover-view class='check_box'  data-id='{{item.id}}' data-index='{{index}}' data-value='{{item.firstname}}' bindtap="check">
+                        <cover-image wx:if='{{item.status==1}}' src='/images/radio-checked.png'></cover-image>
+                      </cover-view>
+                      <cover-view class='info_name'>{{item.firstname}}</cover-view>
+                      <cover-view class='info_phone'>{{item.phone}}</cover-view>
+                    </cover-view>
+                    <cover-view class='info_addr'>{{item.address}}</cover-view>
+                  </cover-view>
+                  <cover-view bindtap="delItem" class="posit">
+                    <!-- <cover-view class="editor"  catchtap="setDefaultAddress">编辑</cover-view>
+                    <cover-view class="del"   catchtap="delAddress">删除</cover-view> -->
+                  </cover-view>
+              </cover-view>
+          </block>
+        </cover-view>
+      </cover-view>
+      <cover-view class='add_btn'>
+        <button hover-class="ui-share-hover" bindtap='toAddress'>添加新地址</button>
+      </cover-view> 
+  </cover-view>
+</view>

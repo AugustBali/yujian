@@ -1,0 +1,25 @@
+<!--pages/guide/guide.wxml-->
+<view class='container'>
+  <view class='bg_img'>
+      <image mode="scaleToFill" src="/images/bg.jpg"></image>
+  </view>
+  <view class='dingzhi'>
+    <view class='btn_box' hover-class="ui-share-hover" bindtap='tpIndex'>
+      <view class='btn'> 开始定制</view>
+    </view>
+    <view class='tg_box'>
+      <checkbox color="#fff" value="1" bindtap="cheackChange" checked="{{isCheck}}"></checkbox>
+      <text class='ty'>同意</text>
+      <text class="tg_text"  bindtap='toDesc'>《私人定制特别说明》</text>
+    </view> 
+  </view>
+  <view class='foot_btn'>
+    <view class='help_btn'>
+      <view class='iconfont icon-bangzhu' hover-class='btn_hover' bindtap='toHelp'>帮助中心</view>
+    </view>
+    <view class='order_btn'>
+        <view class='iconfont icon-asmkticon0164' bindtap='toOrder' hover-class='btn_hover'>我的订单</view>
+    </view>
+  </view>
+  <view class='showToast' wx:if="{{isShow}}">请阅读并同意《私人定制特别说明》</view>
+</view>

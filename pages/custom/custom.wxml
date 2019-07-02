@@ -1,0 +1,133 @@
+<!-- pages/guide/guides.wxml -->
+<view class='custom'>
+  <view class='custom_box'>
+    <view class='custom_content'>
+      <view class='bottle_pic'>
+        <image src='/images/bottle.png'></image>
+      </view>
+      <view class='card'>
+        <view class='card_content'>
+          <view class='right_card_content' wx:if='{{content_choice}}'>
+            <view class='img_box'>
+              <image mode='aspectFill' src='{{side_choice==true?img_src.one:""}}'></image>
+            </view>
+            <view class='edit_word'>
+              <form class='say_word'>
+                <view class='title_box'>
+                  <input style='font-size:12px;' name='title_name'   placeholder='请输入标题' bindinput='write_title' value='{{title_word}}'></input>
+                </view>
+                <view class='word_box'>
+                  <textarea name='diy_word'  placeholder='请输入想说的话' bindinput='write_word' value='{{word_content}}'></textarea>
+                </view>
+              </form>
+              <view class='erweima'>
+                <image src='/images/erweima.jpg'></image>
+              </view>
+            </view>
+          </view>
+          <view class='right_card_content' wx:if='{{!content_choice}}'>
+             <view class='img_box'>
+              <image mode='aspectFill' src='{{side_choice==false?img_src.two:""}}'></image>
+            </view>
+            <view class='edit_word'>
+              <form class='say_word'>
+                <view class='title_box'>
+                  <input style='font-size:12px;' name='firstname'   placeholder='请输入姓名' bindinput='firstname' value='{{firstname}}'></input>
+                </view>
+                <view class='word_box'>
+                  <textarea name='diy_word'  placeholder='请输入想说的话' bindinput='content' value='{{content}}'></textarea>
+                </view>
+              </form>
+              <view class='parameter'>
+                <view class='parameter_alcohol'>酒精度：{{alcohol_num}}</view>
+                <view class='parameter_net_content'>净含量：{{net_content_num}}</view>
+              </view>
+            </view>
+              <!-- <view class='big_box_img'>
+                <image  mode='aspectFill' src='{{side_choice==false?img_src.two:""}}'></image>
+              </view>
+              <view class='word_box_one'>
+                <view class='one_word'>{{word_content}}</view>
+              </view> -->
+              <!-- <view class='word_box_two'>
+                <view class='two_word'>{{word_content_two}}</view>
+              </view>
+              <view class='word_box_three'>
+                <view class='three_word'>{{word_content_three}}</view>
+              </view> -->
+              <!-- <view class='erweima'>
+                <image src='/images/erweima.jpg'></image>
+              </view> -->
+          </view>
+          <view class='logo_box'>
+            <view class='contact_box' wx:if="{{!content_choice}}">
+             <view class='contact'>
+              <view class='produce_factory'>
+                <text>生产厂商：浙江遇涧酒有限责任公司</text>
+              </view>
+              <view class='contact_address'>
+                <text>联系地址：浙江临海市城关镇井尾街</text>
+              </view>
+              <view class='contact_phone'>
+                <text>联系电话：18823658328</text>
+              </view>
+             </view>
+            </view>
+            <view class='logo_pic' wx:if="{{content_choice}}">
+              <image src='/images/yj_logo.jpg'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='upload_img' animation='{{touch_down_upload}}' bindtouchstart='narrow' bindtouchend='enlarge' bindtap='upload_img'>
+      <view class='upload_img_up'>上传图片</view>
+      <view class='upload_img_down'></view>
+    </view>
+    <view class='submit' animation='{{touch_down_submit}}' bindtouchstart='narrow_submit' bindtouchend='enlarge_submit' bindtap='all_submit'>
+      <view class='submit_up'>提交</view>
+      <view class='submit_down'></view>
+    </view>
+     <view class='alcohol' animation='{{touch_down_alcohol}}' bindtouchstart='narrow_alcohol' bindtouchend='enlarge_alcohol' bindtap='alcohol'>
+      <view class='choose_alcohol'>选择酒精度</view>
+      <view class='choose_down'></view>
+    </view>
+    <view class='net_content' animation='{{touch_down_net_content}}' bindtouchstart='narrow_net_content' bindtouchend='enlarge_net_content' bindtap='net_content'>
+      <view class='choose_net_content'>选择净含量</view>
+      <view class='net_content_down'></view>
+    </view>
+    <!-- <view class='tijiao'>
+      <button bindtap='tijiao'>提交</button>
+    </view> -->
+    <view class='sided' bindtap='side_change'>
+      <view class='front' wx:if='{{side_choice}}'>正</view>
+      <view class='front' wx:if='{{!side_choice}}'>反</view>
+    </view>
+
+  </view>
+  <view class='choose_pic' wx:if='{{choosePic}}'>
+    <view class='module_up'>
+      <view class='choose_pic_confirm'>
+        <view bindtap='save_choose_pic'>保存</view>
+      </view>
+    </view>
+    <view class='module_down'>
+      <view class='upload_pic' bindtap='uploadPic'>
+        <view class='upload_pic_box'>
+          <image src='/images/uploadLogo.png'></image>
+        </view>
+        <view class='upload_pic_word'>上传图片</view>
+      </view>
+      <view class='default_pic_box'>
+        <!-- <view class='scroll_box'> -->
+        <scroll-view scroll-x class='scroll_box'>
+          <view class='default_pic' wx:for="{{array_img}}">
+            <image mode='aspectFill' src='{{item}}' data-index='{{index}}' bindtap='choose_fault_pic'></image>
+          </view>
+        </scroll-view>
+        <!-- </view> -->
+      </view>
+    </view>
+  </view>
+  <view class='mask' wx:if='{{mask}}' bindtap='closed_mask'></view>
+</view>

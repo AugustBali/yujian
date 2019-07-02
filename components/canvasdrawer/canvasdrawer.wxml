@@ -1,0 +1,2 @@
+<canvas  canvas-id="canvasdrawer" style="width:{{width}}"  class="board">
+</canvas>

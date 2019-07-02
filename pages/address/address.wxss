@@ -1,0 +1,64 @@
+/* pages/address/address.wxss */
+.address{
+  width: 100%;
+  height: 100vh;
+ background: #eff2f9;
+}
+.addr{
+  width: 100%;
+  height: 450rpx;
+  background: #fff;
+}
+.addr_name,.addr_phone,.section{
+  width: 95%;
+  height: 100rpx;
+  margin-left: 40rpx;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #ddd;
+}
+.addr_name input,.addr_phone input{
+  font-size: 30rpx;
+}
+.section{
+  font-size: 35rpx;
+}
+.desc_addr{
+  font-size:30rpx;
+   margin-left: 40rpx;
+   margin-top: 20rpx;
+}
+.desc_addr textarea{
+  width: 100%;
+  height: 120rpx;
+}
+.default_addr{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #fff;
+  margin-top: 10rpx;
+}
+.addr_text{
+  width: 400rpx;
+  text-align: right;
+}
+.checbox {
+  width: 400rpx;
+  text-align: right;
+}
+.addr_btn{
+  width: 95%;
+  margin: 20rpx auto;
+}
+.addr_btn button{
+  font-size: 30rpx;
+  background: #e2ba00;
+  color: #fff;
+}
+checkbox .wx-checkbox-input{
+  width: 30rpx;
+  height: 30rpx;
+}

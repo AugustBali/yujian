@@ -1,0 +1,85 @@
+<!--pages/orderInfo/orderInfo.wxml-->
+<view class='orderIfo'>
+    <view class='tip'>
+      <view class='copyOrderCode'>
+        <view>订单编号：{{orderCode}}</view>
+        <!-- <view class='contact'>
+          <image mode='widthFix' src='/images/contact.png'></image>
+        </view> -->
+        <view style='margin-left:20rpx'>
+          联系客服
+        </view>
+      </view>
+      <view class='orderDown'>
+        <view class='img'>
+            <image src='https://www.bslxx.com/public/static/yujian/images/21.png'></image>
+        </view>
+        <view class='goods_info'>
+          <view class='info_title'>
+            <text>遇涧个性瓶私人定制版（箱装）</text>
+            <text style='color:#999'>产品规格：{{info_data.alcohol_num}}度{{info_data.net_content_num}} x 6瓶/箱装</text>
+            <text style='color:#e2ba00'>￥68</text>
+          </view>
+          <view class='goods_num'>
+            x1
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='addr' bindtap='alertMask'>
+        <view style='width:80%'>
+          <view class='addr_tip'>
+              <view class='addr_info'>联系信息：</view>
+              <view class='tip_name'> <view class='addr_title'>姓名：</view>{{info_data.firstname}}</view>
+              <view class='tip_phone'><view class='addr_title'>电话：</view>{{info_data.phone}}</view>
+              <view class='addr_bot'><view class='addr_title'>地址：</view>{{info_data.address}}</view>
+          </view>
+        </view>
+        <!-- <view style='width:20%;font-size:50rpx;text-align:right;line-height:100rpx;color:#999;'>></view> -->
+    </view>
+    <view class='detail'>
+        <view class='detail_title'>
+           <view style='width:80%;font-size:36rpx;font-weight:bold'>定制详情:</view>
+           <!-- <view bindtap='toModifyDiy' style='width:20%;text-align:right;color:#999;'>修改></view> -->
+        </view>
+        <view class='detail_img'>
+          <painter  palette="{{template}}" bind:imgOK="onImgOK" />
+           <!-- <image src='/images/detail_bg2.jpg'></image> -->
+        </view>
+    </view>
+    <!-- <view class='save'>保存并支付</view>
+     <view class='mask' wx:if='{{mask}}' bindtap='closed_mask'></view>
+  <view class='pickerAddr' wx:if='{{mask}}' >
+     <view class='pick_title'>
+      <view>收货地址</view>
+      <view class='pick_close_btn' bindtap='closed_mask'>X</view>
+     </view>
+     <view class='info'>
+        <scroll-view scrollY="true"  style="width:100%;height:500rpx;">
+          <block wx:for="{{descAddr}}">
+            <scroll-view scrollWithAnimation scrollLeft="" scrollX>
+              <view class='info_box'>
+                  <view class='info_msg'  data-id='{{item.id}}'  data-index='{{index}}' bindtap="check">
+                    <view class='info_msg_box'>
+                      <view class='check_box'  data-id='{{item.id}}' data-index='{{index}}' data-value='{{item.firstname}}' bindtap="check">
+                        <image wx:if='{{item.status==1}}' src='/images/radio-checked.png'></image>
+                      </view>
+                      <view class='info_name'>{{item.firstname}}</view>
+                      <view class='info_phone'>{{item.phone}}</view>
+                    </view>
+                    <view class='info_addr'>{{item.address}}</view>
+                  </view>
+                  <view bindtap="delItem" class="posit">
+                    <view class="editor"  catchtap="setDefaultAddress">编辑</view>
+                    <view class="del"   catchtap="delAddress">删除</view>
+                  </view>
+              </view>
+            </scroll-view>
+          </block>
+        </scroll-view>>
+      </view>
+      <view class='add_btn'>
+        <button hover-class="ui-share-hover" bindtap='toAddress'>添加新地址</button>
+      </view> 
+  </view> -->
+</view>

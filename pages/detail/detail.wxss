@@ -1,0 +1,332 @@
+/* pages/detail/detail.wxss */
+.detail{
+  width: 100%;
+  height: 100%;
+  background: #eff2f9;
+   position: relative;
+}
+.img_box{
+  width: 100%;
+  height: 500rpx;
+  background: #fff;
+  padding: 40rpx 0;
+  box-sizing: border-box;
+}
+.box_item{
+  width: 95%;
+  height: 400rpx;
+  border: 1rpx solid #eff2f9;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.box_item image{
+  width: 100%;
+  height: 100%;
+}
+
+.det_title{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  background: #e2ba00;
+}
+.product{
+  width: 100%;
+  height: 200rpx;
+  background: #fff;
+}
+.product_box{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 25rpx 30rpx;
+  box-sizing: border-box;
+  
+}
+.p_img{
+  width: 400rpx;
+  height: 150rpx;
+  background: #eff2f9;
+}
+.p_desc{
+  width: 800rpx;
+  font-size: 25rpx;
+  margin-left: 20rpx;
+}
+.p_stan{
+   margin-top: 30rpx;
+}
+.p_price{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+}
+.p_price .price{
+  width: 50%;
+  color: #e2ba00;
+  font-size: 30rpx;
+  font-weight: 900;
+}
+.price .you{
+  display: inline-block;
+  margin-left: 10rpx;
+  width: 60rpx;
+  text-align: center;
+  background: #e2ba00;
+  color:#ffF;
+  border-radius: 5rpx;
+  font-size: 20rpx;
+  font-weight:0;
+}
+.p_num{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+  margin-left: 70rpx;
+}
+.p_num_item{
+  width: 45rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  text-align: center;
+  border: 1rpx solid #999;
+}
+.p_num_item.minus{
+  border-right: none;
+}
+.p_num_item.add{
+  border-left: none;
+}
+.p_num_item.number{
+  width: 80rpx;
+}
+.addAddr{
+  width: 100%;
+  height: 100rpx;
+  font-size: 30rpx;
+  color: #999;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: 10rpx;
+}
+.add_title{
+  line-height: 100rpx;
+}
+.addAddr .addAddr_desc{
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: row;
+  color: #000;
+}
+.addAddr_desc_name{
+  margin-right:20rpx; 
+}
+.notice{
+  width: 100%;
+  height: 150rpx;
+  background: #fff;
+  margin-top:10rpx; 
+  font-size: 25rpx;
+  color: #999;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+}
+.imgDesc{
+  width: 100%;
+  height:100%;
+  margin-top: 10rpx;
+  background: #fff;
+}
+.img_desc_box{
+  width: 100%;
+  height: 1200rpx;
+}
+.img_desc_box image{
+  width: 100%;
+  height: 100%;
+}
+.img_desc_box.p4_img{
+  height: 400rpx;
+  margin-bottom: 100rpx;
+}
+.pay{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+.audit_btn{
+  display: flex;
+  width: 500rpx;
+  font-size: 25rpx;
+  color: #999;
+  background: #fff;
+  padding: 0 10rpx;
+}
+.pay_btn{
+  width: 250rpx;
+  background: #e2ba00;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+}
+/* .cart_btn{
+  width: 220rpx;
+  background: #e27800;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+} */
+/* .price_box{
+  height: 100%;
+  width: 150rpx;
+  color: #999;
+  background: #fff;
+} */
+.pay .price{
+  margin-left: 20rpx;
+  color: #e2ba00;
+  font-size: 30rpx;
+  font-weight: 900;
+}
+.num_btn{
+  background: #eff2f9;
+}
+.detail .pickerAddr{
+  width: 100%;
+  height: 700rpx;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 999999;
+}
+.pickerAddr .pick_title{
+  width: 100%;
+  height: 80rpx;
+  padding: 20rpx 0;
+  font-size: 35rpx;
+  text-align: center;
+}
+.info{
+  width: 100%;
+  height: 100%;
+}
+.info_box{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+.info_box .posit{
+  display: flex;
+  margin-left: 20rpx;
+}
+.info_box .posit .editor{
+  width: 100rpx;
+  height: 100rpx;
+  font-size:30rpx;
+  line-height: 100rpx;
+  background: #e2ba00;
+  color: #fff;
+  text-align: center ;
+}
+.info_box .posit .del{
+  width: 100rpx;
+  height: 100rpx;
+  font-size:30rpx;
+  line-height: 100rpx;
+  background: red;
+  color: #fff;
+  text-align: center 
+}
+.info_msg_box{
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+}
+.info_msg{
+  width:70%;
+  height:120rpx;
+  padding:10rpx 0;
+  box-sizing:border-box;
+}
+.check_box{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  border: 1rpx solid #999;
+}
+.check_box image{
+  width: 100%;
+  height: 100%;
+}
+.info_msg_box .info_name{
+  width: 150rpx;
+  margin-left: 10rpx;
+}
+.info_msg .info_addr{
+  font-size:25rpx;
+  color: #999;
+  margin-left: 70rpx; 
+}	
+.info_msg .info_phone{
+  width: 200rpx;
+}
+::-webkit-scrollbar {
+	  width: 0;
+	  height: 0;
+	  color: transparent;
+}
+
+.pickerAddr .pick_close_btn{
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  position: absolute;
+  right: 20rpx;
+  top: 15rpx;
+  font-size: 40rpx;
+  color: #999;
+}
+.pickerAddr .add_btn{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.pickerAddr .add_btn button{
+  width: 100%;
+  height:100rpx;
+  line-height: 100rpx;
+  background: #e2ba00;
+  color: #fff;
+  font-size: 35rpx;
+  border-radius: 0;
+}
+.ui-share-hover{
+   opacity: 0.97;
+   transform: scale(0.97,0.97);
+ }
+.detail .mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 60;
+}

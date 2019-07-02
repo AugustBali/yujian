@@ -1,0 +1,51 @@
+<!--pages/description/description.wxml-->
+<view class='container'>
+  <view class='desc_box'>
+      <view class='desc_title'>
+            <text>私人定制特别说明</text>
+      </view>
+      <view class='desc_contetn'>
+        <scroll-view  scroll-y style='height:720rpx' scrollTop="{{scrollTop}}">
+          <view class='con_box'>
+              <view class='con_box_item'>
+              感谢您参与遇涧私人定制表达瓶活动。请按照流程填写相关信息，即可定制您的专属表达瓶。定制前，请认真阅读一下信息:
+              </view>
+              <view class='con_box_item'>
+                <view class='num'>1</view>
+                您自愿将上传图片、语录、微信头像、地理位置等信息无偿永久授权给主办方用于您的一次性私人定制产品包装。
+              </view>
+              <view class='con_box_item'>
+               <view class='num'>2</view>
+               由于该制定产品，下单后即将进入生产制作流程，故审核通过当日24点之后，不再支持取消订单、修改内容、退款服务。
+              </view>
+              <view class='con_box_item'>
+                <view class='num'>3</view>
+               请确保您所提供的图片和语录不会侵犯他人的合法权益、或其他任何违法中华人民共和国法律和法规内容，若因此与第三方发生纠纷，给主办方造成损失的，应赔偿全部损失。
+              </view>
+              <view class='con_box_item'>
+               <view class='num'>4</view>
+              主办方有权对您的私人定制信息进行审核，最终结果以通知为准。对于存在问题的定制，请按提示进行修改。如超时未修改，主办方将自动退款至您的支付账号
+              </view>
+              <view class='con_box_item'>
+               <view class='num'>5</view>
+               您的私人定制产品只能自用或无偿分享亲朋好友，严禁任何以盈利目的的二次销售，包括但不限于转售、再次分销等。
+              </view>
+              <view class='con_box_item'>
+               <view class='num'>6</view>
+               主办方保证您的私人定制产品质量符合中华人民共和国相关法律法规的规定，非产品质量问题不接受退换，望请谅解。
+              </view>
+              <view class='con_box_item'>
+               <view class='num'>7</view>
+             如您对本次活动有任何的建议或意见，可与主办方的客服联系，主办方将在第一时间为您解答。
+              </view>
+          </view>
+      </scroll-view>
+      </view>
+      <view class='desc_footer'>
+        <view class='footer_btn iconfont icon-jiantou1' bindtap='topScroll' hover-class="ui-share-hover" ></view>
+      </view>
+  </view>
+  <view class='confirm'>
+      <button bindtap='toGuide'>确定</button>
+  </view>
+</view>

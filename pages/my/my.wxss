@@ -1,0 +1,174 @@
+/* my.wxss */
+.my_top_box {
+  width: 100%;
+  height: 400rpx;
+}
+.login_button{
+  width: 30%;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  background-color: #A39F93;
+  font-size: 30rpx;
+  top: 90rpx;
+  margin:20rpx auto;
+  
+}
+.login_button_hiden{
+  display: none
+}
+
+.mtb_poeople {
+  width: 100%;
+  height: 60%;
+  background-color: #2f304f;
+  position: relative;
+  z-index: 9999;
+}
+
+.mtb_img {
+  width: 100%;
+  height: 40%;
+}
+
+.mtb_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.mtb_poeople_img {
+  position: absolute;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
+  border: solid rgb(100, 100, 100) 1rpx;
+  margin: 50rpx 40%;
+  overflow: hidden
+}
+.mtb_poeople_img image{
+  width: 100%;
+  height: 100%
+}
+
+.mtb_poeople_name {
+  position: absolute;
+  width: 50%;
+  height: 60rpx;
+  margin-top: 250rpx;
+  margin-left: 190rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: white;
+}
+
+.my_collect {
+  width: 95%;
+  height: 100rpx;
+  margin: 30rpx auto;
+  border-radius: 15rpx;
+  background-color: #f7f7f7;
+}
+
+.my_collect view image {
+  width: 100%;
+  height: 100%;
+}
+
+.my_collect_img {
+  float: left;
+  width: 10%;
+  height: 70%;
+  margin-left: 50rpx;
+  margin-top: 8rpx;
+
+}
+
+.my_collect_text {
+  float: left;
+  width: 30%;
+  height: 100rpx;
+  margin-left: 30rpx;
+  line-height: 100rpx;
+}
+
+.my_collect_icon {
+  float: left;
+  width: 8%;
+  height: 50%;
+  margin-left: 230rpx;
+  margin-top: 25rpx;
+}
+
+.my_answer {
+  width: 95%;
+  height: 100rpx;
+  margin: 30rpx auto;
+  border-radius: 15rpx;
+  background-color: #f7f7f7;
+}
+
+.my_answer view image {
+  width: 100%;
+  height: 100%;
+}
+
+.my_answer_img {
+  float: left;
+  width: 10%;
+  height: 70%;
+  margin-left: 50rpx;
+  margin-top: 8rpx;
+}
+
+.my_answer_text {
+  float: left;
+  width: 30%;
+  height: 100rpx;
+  margin-left: 30rpx;
+  line-height: 100rpx;
+}
+
+.my_answer_icon {
+  float: left;
+  width: 8%;
+  height: 50%;
+  margin-left: 230rpx;
+  margin-top: 25rpx;
+}
+
+.my_clear {
+  width: 95%;
+  height: 100rpx;
+  margin: 30rpx auto;
+  border-radius: 15rpx;
+  background-color: #f7f7f7;
+}
+
+.my_clear view image {
+  width: 100%;
+  height: 100%;
+}
+
+.my_clear_img {
+  float: left;
+  width: 10%;
+  height: 70%;
+  margin-left: 50rpx;
+  margin-top: 8rpx;
+}
+
+.my_clear_text {
+  float: left;
+  width: 30%;
+  height: 100rpx;
+  margin-left: 30rpx;
+  line-height: 100rpx;
+}
+
+.my_clear_icon {
+  float: left;
+  width: 8%;
+  height: 50%;
+  margin-left: 230rpx;
+  margin-top: 25rpx;
+}

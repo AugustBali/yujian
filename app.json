@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/my/my",
+    "pages/guide/guide",
+    "pages/detail/detail",
+    "pages/custom/custom",
+    "pages/address/address",
+    "pages/index/index",
+    "pages/help/help",
+    "pages/myOrder/myOrder",
+    "pages/payOrderInfo/payOrderInfo",
+    "pages/description/description",
+    "pages/logs/logs",
+    "pages/webview/webview"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "遇涧私人定制",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

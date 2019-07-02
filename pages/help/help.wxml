@@ -1,0 +1,49 @@
+<!--pages/help/help.wxml-->
+<view class='help'>
+  <view class='help_content'>
+    <scroll-view class='scroll' scroll-y>
+        <view class='help_con_box'>
+          <view class='con_box_ask'>
+              <text class='ask_title'>问</text>
+              <text class='ask_text'>定制的酒什么时候发货？</text>
+          </view>
+          <view class='con_box_answer'>
+              <text class='answer_title'>答</text>
+              <text class='answer_text'>审核通过后7个工作日内发货</text>
+          </view>
+        </view>
+        <view class='help_con_box'>
+          <view class='con_box_ask'>
+              <text class='ask_title'>问</text>
+              <text class='ask_text'>能退换货吗？</text>
+          </view>
+          <view class='con_box_answer'>
+              <text class='answer_title'>答</text>
+              <text class='answer_text'>如非包装破损等质量问题，定制商品是不支持退换货的哟</text>
+          </view>
+        </view>
+         <view class='help_con_box'>
+          <view class='con_box_ask'>
+              <text class='ask_title'>问</text>
+              <text class='ask_text'>可以上传自己的图片和文字吗？</text>
+          </view>
+          <view class='con_box_answer'>
+              <text class='answer_title'>答</text>
+              <text class='answer_text'>可以上传自己喜欢的图片和语录的，通过审核之后，即可生成您的独一无二的定制遇涧表达瓶。</text>
+          </view>
+        </view>
+        <view class='help_con_box'>
+          <view class='con_box_ask'>
+              <text class='ask_title'>问</text>
+              <text class='ask_text'>一箱内的图片和语录都是一样的吗？</text>
+          </view>
+          <view class='con_box_answer'>
+              <text class='answer_title'>答</text>
+              <text class='answer_text'>一箱（6瓶）的图案和文字都是一样的哟。</text>
+          </view>
+        </view>
+        <view class='adv_btn' hover-class='btn_hover'>资讯客服</view>
+    </scroll-view>
+  </view>
+  <view class='back_btn' hover-class='btn_hover' bindtap='backGuide'>返回</view>
+</view>

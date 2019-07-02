@@ -1,0 +1,36 @@
+<!--pages/address/address.wxml-->
+<view class='address'>
+  <view class='addr'>
+      <view class='addr_name'>
+          <input name="firstname" bindinput='firstname' placeholder='请输入名字'></input>
+      </view>
+      <view class='addr_phone'>
+          <input name="phone" bindinput='phone' placeholder='请输入手机号码'></input>
+      </view>
+      <view class="section">
+        <picker
+            mode="region"
+            value="{{region}}"
+            bindchange="bindRegionChange"
+            custom-item="{{customItem}}"
+          > 
+         <view wx:if='{{region.length==0}}'>请选择地址</view>
+          <view class="section__title" wx:if='{{region.length!=0}}'>
+            {{region[0]}}{{region[1]}}{{region[2]}}
+          </view>
+        </picker>
+      </view>
+      <view class='desc_addr'>
+        <textarea name="descAddr" bindinput="descAddr" placeholder='请输入详细地址'></textarea>
+      </view>
+  </view>
+  <view class='default_addr'>
+    <view class='addr_text'>设置为默认地址</view>
+    <view class='checbox'>
+      <checkbox bindtap="cheackChange" checked='{{changed}}'></checkbox>
+    </view>
+  </view>
+  <view class='addr_btn'>
+    <button bindtap='saveAddr'>保存</button>
+  </view>
+</view>

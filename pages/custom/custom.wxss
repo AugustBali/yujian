@@ -1,0 +1,495 @@
+/* pages/custom/custom.wxss */
+.custom {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(241, 239, 98);
+  display: flex;
+  justify-content: center;
+  
+}
+
+.custom_box {
+  position: relative;
+  width: 90%;
+  height: 85%;
+  border: 4rpx solid black;
+  border-radius: 10rpx;
+  background-color: rgb(236, 199, 182);
+  margin-top: 7%;
+}
+
+.custom_box .sided {
+  position: absolute;
+  top: 0;
+  right: 0;padding:25px;
+
+  font-size: 60rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.custom_box .upload_img {
+  position: absolute;
+  bottom: -4%;
+  left: 0;
+  width: 47%;
+  height: 100rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.custom_box .alcohol{
+  position: absolute;
+  bottom: -13%;
+  left: 0;
+  width: 47%;
+  height: 100rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.upload_img .upload_img_up {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  height: 80rpx;
+  background-color: rgb(200, 240, 243);
+  border: 4rpx solid #000;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 56rpx;
+}
+.alcohol .choose_alcohol{
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  height: 80rpx;
+  background-color: rgb(134, 236, 16);
+  border: 4rpx solid #000;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 56rpx;
+}
+.upload_img .upload_img_down {
+  position: relative;
+  top: -13rpx;
+  width: 100%;
+  height: 26rpx;
+  background-color: rgb(95, 183, 224);
+  border: 4rpx solid #000;
+  border-radius: 10rpx;
+}
+.alcohol .choose_down{
+  position: relative;
+  top: -13rpx;
+  width: 100%;
+  height: 26rpx;
+  background-color: rgb(108, 185, 20);
+  border: 4rpx solid #000;
+  border-radius: 10rpx;  
+}
+.custom_box .submit {
+  position: absolute;
+  bottom: -4%;
+  right: 0;
+  width: 47%;
+  height: 100rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.custom_box .net_content{
+  position: absolute;
+  bottom: -13%;
+  right: 0;
+  width: 47%;
+  height: 100rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+}
+.submit .submit_up {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  height: 80rpx;
+  background-color: rgb(241, 239, 98);
+  border: 4rpx solid #000;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 56rpx;
+}
+.net_content .choose_net_content{
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  height: 80rpx;
+  background-color: rgb(241, 184, 98);
+  border: 4rpx solid #000;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 56rpx;
+}
+
+.submit .submit_down {
+  position: relative;
+  top: -13rpx;
+  width: 100%;
+  height: 26rpx;
+  background-color: rgb(212, 201, 99);
+  border: 4rpx solid #000;
+  border-radius: 10rpx;
+}
+.net_content .net_content_down{
+  position: relative;
+  top: -13rpx;
+  width: 100%;
+  height: 26rpx;
+  background-color: rgb(219, 157, 65);
+  border: 4rpx solid #000;
+  border-radius: 10rpx;
+}
+.custom_content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.custom_content .card {
+  position: absolute;
+  bottom: 8%;
+  left: 15%;
+  width: 70%;
+  height: 65%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom_content .bottle_pic {
+  position: absolute;
+  top: 4%;
+  left: 15%;
+  width: 70%;
+  height: 23%;
+}
+
+.custom_content .bottle_pic image {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card_content {
+  position: relative;
+  width: 85%;
+  height: 91%;
+  border: 4rpx solid #af1e23;
+}
+
+.card_content .logo_box {
+  width: 100%;
+  height: 15%;
+  background-color: rgb(241, 239, 98);
+  font-size: 20rpx;
+  
+}
+.logo_box image{
+  width: 100%;
+  height: 100%
+}
+.card .back_card_content {
+  width: 100%;
+  height: 85%;
+}
+
+.card .right_card_content {
+  width: 100%;
+  height: 85%;
+}
+
+.right_card_content .img_box {
+  width: 100%;
+  height: 70%;
+}
+
+.right_card_content .edit_word {
+  width: 100%;
+  height: 30%;
+}
+
+.right_card_content .img_box  image {
+  width: 100%;
+  height: 100%;
+}
+
+.right_card_content .erweima {
+  position: absolute;
+  bottom: 20%;
+  right: 3%;
+}
+.right_card_content .parameter{
+  position: absolute;
+  bottom: 24%;
+  right: 1%;  
+  color: #af1e23;
+  font-size: 19rpx;
+}
+.right_card_content .erweima image {
+  width: 86rpx;
+  height: 86rpx;
+  display: block;
+}
+
+.right_card_content .title_name {
+  width: 70%;
+  height: 30%;
+  margin: 40rpx 20rpx;
+}
+
+.right_card_content .say_word {
+  width: 70%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.right_card_content .say_word .title_box {
+  width: 93%;
+  height: 40%;
+  margin: 10rpx;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  color: black;
+}
+
+.right_card_content .say_word .word_box {
+  width: 93%;
+  height: 40%;
+  margin: 0 10rpx;
+  font-size: 12px;
+  color: black;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+}
+
+.word_box textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.back_card_content .big_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.back_card_content .big_box .big_box_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.back_card_content .big_box .big_box_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.back_card_content .word_box_one {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  width: 50%;
+  height: 70%;
+}
+
+.back_card_content .word_box_one .one_word {
+  width: 100%;
+  height: 100%;color: #fff;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+}
+
+/* .back_card_content .word_box_two{position: absolute;top: 18%;right: 15%;width: 10%;height: 59%;} */
+
+/* .back_card_content .word_box_two .two_word{width: 100%;height: 100%;word-wrap: break-word;word-break: break-all;overflow: hidden;font-weight: bold} */
+
+/* .back_card_content .word_box_three{position: absolute;top: 31%;right: 28%;width: 10%;height: 59%;} */
+
+.back_card_content .erweima {
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+  width: 20%;
+  height: 14%;
+}
+
+.back_card_content .erweima image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.custom .choose_pic {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300rpx;
+  z-index: 100;
+}
+
+.custom .choose_pic .module_up {
+  position: relative;
+  z-index: 105;
+  width: 100%;
+  height: 80rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0 2rpx 6rpx rgba(71, 188, 204, 0.3);
+}
+
+.custom .choose_pic .module_down {
+  position: relative;
+  z-index: 101;
+  display: flex;
+  width: 100%;
+  height: 220rpx;
+  background: rgb(191, 232, 245);
+}
+
+.module_up .choose_pic_confirm {
+  margin-right: 10rpx;
+  background: rgb(69, 165, 230);
+  color: #fff;
+  font-size: 26rpx;
+  border-radius: 6rpx;
+  width: 100rpx;
+  height: 55rpx;
+  text-align: center;
+  line-height: 55rpx;
+}
+
+.module_down .upload_pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2rpx 0 6rpx rgba(71, 188, 204, 0.4);
+}
+
+.upload_pic .upload_pic_box {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.upload_pic_box image {
+  width: 100%;
+  height: 100%;
+}
+
+.upload_pic .upload_pic_word {
+  font-size: 22rpx;
+  color: rgb(69, 165, 230);
+}
+
+.module_down .default_pic_box {
+  overflow: auto;
+  width: 75%;
+  height: 100%;
+}
+
+.default_pic_box .default_pic {
+  float: left;
+  text-align: center;
+  width: 100rpx;
+  height: 150rpx;
+  margin-left: 20rpx;
+}
+
+.default_pic_box .scroll_box {
+  height: 100%;
+  width: 1220rpx;
+  padding: 30rpx 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.default_pic image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+
+.custom .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 50;
+}
+.tijiao{
+  position: fixed;
+  top: 50rpx;
+}
+.img_box{
+  width: 100%;
+  height: 500rpx;
+  background: #fff;
+  padding:40rpx 0;
+  box-sizing: border-box;
+}
+.box_item{
+  width: 95%;
+  height: 400rpx;
+  border: 1rpx solid #eff2f9;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.logo_box .contact_box{
+  width: 100%;
+  height: 100%;
+}
+.logo_box .contact{
+  width: 100%;
+  height: 100%;
+  background: #af1e23;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+.logo_box .logo_pic{
+  width: 100%;
+  height: 100%;
+}

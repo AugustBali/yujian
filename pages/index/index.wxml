@@ -1,0 +1,30 @@
+<view class='home'>
+  <view class='customization'>
+    <view class='customization_box'>
+      <view class='customization_up'>开始定制</view>
+      <view class='customization_down'></view>
+    </view>
+    <view class='explain'>
+      <view class='selection'></view>
+      <view class='agree'>同意</view>
+      <view class='explain_content'>
+        <view class='explain_word'>《遇涧私人定制特别说明》</view>
+        <view class='underline'></view>
+      </view>
+    </view>
+  </view>
+  <view class='footer'>
+    <view class='help'>
+      <view class=''>
+        <image class='help_icon' src='/images/help.png'></image>
+      </view>
+      <view>帮助中心</view>
+    </view>
+    <view class='order'>
+      <view class=''>
+         <image class='order_icon' src='/images/order.png'></image>
+      </view>
+      <view>我的订单</view>
+    </view>
+  </view>
+</view>

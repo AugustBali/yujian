@@ -1,0 +1,17 @@
+<!-- my.wxml -->
+<view class='my_top_box'>
+  <view class='mtb_poeople'>
+    <button wx:if="{{canIUse}}" open-type="getUserInfo" class="login_button {{login_button_show ? ''           :'login_button_hiden'}}" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">立即登录</button>
+    <view wx:else class='login_button'>请升级微信版本</view>
+    <view class="mtb_poeople_img {{login_button_show ? 'login_button_hiden':''}}">
+    <image src='{{avatarUrl}}'></image>
+    </view>
+    <view class="mtb_poeople_name {{login_button_show ? 'login_button_hiden':''}}">
+    {{nickName}}
+    </view>
+  </view>
+  <view class='mtb_img'>
+    <image src='/images/my_pic.jpg'></image>
+  </view>
+</view>
+ 

@@ -1,0 +1,163 @@
+/* pages/diyOrder/diyOrder.wxss */
+page{
+  overflow-y: hidden
+}
+.order{
+  width: 100%;
+  height: 100vh;
+  background: #eff2f7;
+}
+.order_tar_header{
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  border-top: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+}
+.order_tar_box{
+  width: 90%;
+  height: 100%;
+  line-height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  font-size: 30rpx;
+}
+.box_item{
+  width:200rpx;
+  height: 100rpx;
+  text-align: center;
+}
+.on{
+  color: #e2ba00;
+  border-bottom: 1rpx solid #e2ba00;
+}
+.swiper{ 
+  width:100%;
+  height:100%; 
+ }
+.scroll_tap{ 
+  height:100%;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color:transparent;
+}
+.no_oreder{
+  width: 50%;
+  margin: 160rpx auto;
+  padding: 0 60rpx;
+  box-sizing: border-box;
+}
+.no_oreder .no_data_img{
+  width: 150rpx;
+  height: 200rpx;
+  overflow: hidden;
+  margin-left:50rpx; 
+}
+.no_oreder .no_data_img image{
+  width: 100%;
+  height: 100%;
+}
+.no_title{
+  display: block;
+  font-size: 30rpx;
+  color: #999;
+  margin-top: 20rpx;
+}
+.order_box{
+  width: 100%;
+  margin: 0 auto;
+}
+.order_item{
+  width: 100%;
+  background: #fff;
+  margin-top:20rpx; 
+}
+.order_id{
+  width: 90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  flex-direction:row;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #ddd; 
+  margin: 0 auto;
+}
+.order_code{
+  width: 80%;
+}
+.order_img{
+  width: 90%;
+  height: 150rpx;
+  display: flex;
+  flex-direction: rox;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #ddd;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+}
+.order_img .img{
+  width: 150rpx;
+  height: 100rpx;
+  overflow: hidden;
+}
+.order_img .img image{
+  width: 100%;
+  height: 100%;
+}
+.order_img .title{
+  width: 400rpx;
+  height: 100%;
+  font-size: 24rpx;
+  margin-left: 20rpx;
+  line-height:24px;
+
+}
+.num{
+  font-size: 30rpx;
+  width: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.order_btn{
+  width: 90%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+  margin: 0 auto;
+  padding: 30rpx 0;
+ box-sizing: border-box;
+}
+.price{
+  width: 80%;
+  color: #e2ba00;
+}
+.btn{
+  width: 120rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  margin-left: 60rpx;padding:0 10px;
+
+  background: #e2ba00;
+  border-radius: 20rpx;
+  font-size: 25rpx;
+  color: #fff; 
+}
+.back{
+  position:fixed;
+  bottom: 0rpx;
+  width: 100%;
+  height: 150rpx;
+  background: #fff;
+  padding: 30rpx 0;
+  box-sizing: border-box;
+}
+.back button{
+  width: 95%;
+  background: #e2ba00;
+  color: #fff;
+}

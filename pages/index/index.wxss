@@ -1,0 +1,15 @@
+.home{position: relative;width: 100vw;height: 100vh;background-color: rgba(77, 77, 161, 0.603)}
+.customization{position: absolute;bottom: 15%;left: 0;width: 100%;}
+.customization_box{display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.customization_up{width: 80%;height: 80rpx;border: 4rpx solid black;background-color: rgb(136, 211, 207);border-radius: 10rpx;z-index: 10;position: relative;text-align: center;font-weight: bold;line-height: 80rpx}
+.customization_down{width: 80%;height: 20rpx;border: 4rpx solid black;background-color: rgb(66, 124, 199);border-radius: 10rpx;position: relative;top: -10rpx;left: 0;}
+.explain{display: flex;justify-content: center;align-items: center;margin-top: 20rpx}
+.explain .agree{color: #fff;margin-right: 10rpx;font-size: 16px;}
+.explain .selection{width: 30rpx;height: 30rpx;border-radius: 50%;background-color: #fff;margin-right: 10rpx}
+.explain_content{border-bottom: 2rpx solid #eee}
+.explain_content .explain_word{font-size: 16px;color: #eee}
+.footer{position: absolute;bottom: 0;left: 0;width: 100vw;height: 80rpx;display: flex;}
+.footer .order_icon{width: 50rpx;height: 50rpx;display: block;margin-right: 10rpx}
+.footer .help_icon{width: 45rpx;height: 45rpx;display: block;margin-right: 10rpx;}
+.footer .help{display: flex;justify-content: center;align-items: center;width: 50%;background-color: rgba(255, 255, 255, 0.3);font-size: 18px;font-weight: bold;color: #fff;border-right: 2rpx solid rgba(77, 77, 161, 0.603)}
+.footer .order{display: flex;justify-content: center;align-items: center;width: 50%;background-color: rgba(255, 255, 255, 0.3);font-size: 18px;font-weight: bold;color: #fff}
