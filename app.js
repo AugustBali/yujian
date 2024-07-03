@@ -2,6 +2,8 @@
 App({
   //当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
   onLaunch: function () {
+    let b = 'master_b'
+    let c = 'master_c'
     var that = this
     //从本地缓存中异步获取指定 key 的内容
     that.globalData.openid = wx.getStorageSync('userInfo');
