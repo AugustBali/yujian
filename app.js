@@ -48,5 +48,5 @@ App({
     wx_url_1: 'https://api.weixin.qq.com/sns/jscode2session?appid=wx9665dbcab865a13f&secret=80e5571299bcea924bf265d9a33f42a2&js_code=',
     wx_url_2: '&grant_type=authorization_code'
   },
-  type:'master提交'
+  type:'test提交'
 })
